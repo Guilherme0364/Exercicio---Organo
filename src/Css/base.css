@@ -1,0 +1,26 @@
+@import url(_reset.css);
+@import url(_variaveis.css);
+
+body {
+	font-family: var(--fonte-familia-corpo);
+	overflow-x: hidden;
+}
+
+.container { 
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex--centro {
+	align-items: center;
+	justify-content: center;
+}
+
+.flex--coluna {
+	flex-direction: column;
+}
+

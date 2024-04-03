@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+:root {
+    --fonte-familia-corpo: 'Montserrat', sans-serif;
+    --fonte-familia-titulo: 'Prata', sans-serif;
+
+    --fonte-peso-input: 300;
+
+    --fonte-tamanho-titulo: 32px;
+    --fonte-tamanho-cartao-titulo: 18px;
+    --fonte-tamanho-cartao-descricao: 16px;
+    --fonte-tamanho-botao: 18px;    
+    --fonte-tamanho-formulario-label: 22px;
+    --fonte-tamanho-formulario-placeholder: 28px;    
+    
+    --cor-primaria: #6278F7;
+    --cor-secundaria: #95FFD4;
+    --cor-terciaria: #F2F2F2;
+    --cor-hover: #95FFD4;
+
+    --cor-fundo-programacao: #D9F7E9; 
+    --cor-fundo-frontEnd: #E8F8FF;
+    --cor-fundo-dataScience: #F0F8E2;
+    --cor-fundo-devops: #FDE7E8;
+    --cor-fundo-ux: #FAE9F5;
+    --cor-fundo-mobile: #FFF5D9;
+    --cor-fundo-inovacao: #FFEEDF;
+
+    --cor-fundo-formulario: #f2f2f2;
+
+    --cor-destaque-programacao: #57C278; 
+    --cor-destaque-frontEnd: #82CFFA;
+    --cor-destaque-dataScience: #A6D157;
+    --cor-destaque-devops: #E06B69;
+    --cor-destaque-ux: #DB6EBF;
+    --cor-destaque-mobile: #FFBA05;
+    --cor-destaque-inovacao: #FF8A29;
+
+    --sombra: 0 5px 10px #55a6ff38;
+}
+
