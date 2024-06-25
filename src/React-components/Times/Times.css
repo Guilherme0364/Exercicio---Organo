@@ -1,0 +1,20 @@
+@import '../../Css/_variaveis.css';
+@import '../../Css/base.css';
+
+.time{
+    text-align: center;
+    padding: 32px;    
+}
+
+.time-titulo{
+    font-size: var(--fonte-tamanho-titulo);
+    border-bottom: 3px solid;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+.colaborador{
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    margin-top: 32px; 
+}

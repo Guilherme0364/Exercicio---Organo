@@ -2,10 +2,7 @@
 @import '../../Css/base.css';
 
 .formulario{
-    display: flex;
-    justify-content: center;
     margin: 80px 120px;
-    align-items: center;
 }
 
 .formulario form{

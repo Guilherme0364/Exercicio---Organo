@@ -7,8 +7,7 @@ body {
 }
 
 .container { 
-	padding-right: 1rem;
-	padding-left: 1rem;
+	width: 100%;
 }
 
 .flex {
@@ -17,10 +16,14 @@ body {
 
 .flex--centro {
 	align-items: center;
-	justify-content: center;
+	justify-content: center;	
 }
 
 .flex--coluna {
 	flex-direction: column;
+}
+
+.block{
+	display: block;
 }
 

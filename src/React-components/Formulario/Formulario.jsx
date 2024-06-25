@@ -3,18 +3,9 @@ import Botao from "../Botão";
 import CampoTexto from "../Campo de texto";
 import ListaSuspensa from "../Lista Suspensa";
 import './Formulario.css';
+import '../../Css/base.css';
 
-export const Formulario = () => {
-
-    const times = [
-        'Programação',
-        'Front-end',
-        'Data science',
-        'Devops',
-        'Ux e design',
-        'Mobile',
-        'Inovação e Gestão'
-    ]
+export const Formulario = (props) => {
 
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
@@ -23,10 +14,20 @@ export const Formulario = () => {
 
     const aoSalvar = (evento) => { // Variavel 'evento' surge a partir do momento em que a função é executada 
         evento.preventDefault(); // Previne o comportamento padrão de recarregar a página
-    }
+        props.aoColaboradorCadastrado({
+            nome, 
+            cargo,
+            imagem,
+            time
+        })
+        setNome('')
+        setCargo('')
+        setImagem('')
+        setImagem('')
+    }    
 
     return (
-        <section className="formulario">
+        <section className="formulario flex--centro">
             <form onSubmit={aoSalvar}>
                 <h2>Preencha os dados para criar o card do colaborador</h2>
                 <CampoTexto
@@ -52,7 +53,7 @@ export const Formulario = () => {
                 <ListaSuspensa 
                     obrigatorio={true} 
                     label="Time" 
-                    itens={times} 
+                    itens={props.times} 
                     value={time}
                     aoAlterado={valor => setTime(valor)}
                 />

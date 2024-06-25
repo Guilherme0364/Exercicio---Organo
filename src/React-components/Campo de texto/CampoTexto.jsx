@@ -1,4 +1,5 @@
 import './CampoTexto.css';
+import '../../Css/base.css';
 
 export const CampoTexto = (props) =>{
 
@@ -8,10 +9,17 @@ export const CampoTexto = (props) =>{
 
     return (
         <div className='campo-texto'>
-            <label>
+            <label className='campo-texto-label block'>
                 {props.label} 
             </label>
-            <input value={props.valor} onChange={aoDigitado} required={props.obrigatorio} placeholder={props.placeholder}/>
+            
+            <input 
+                className='campo-texto-input'
+                value={props.valor} 
+                onChange={aoDigitado} 
+                required={props.obrigatorio} 
+                placeholder={props.placeholder}
+            />
         </div>
     )
 }
